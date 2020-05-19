@@ -1,0 +1,2 @@
+module AdminOrderedProductsHelper
+end

@@ -1,0 +1,13 @@
+<h3>商品新規登録</h3>
+
+<%= form_for @product, url: admin_products_path do |f| %>
+    <%= f.attachment_field :image %>
+    <span>商品名</span>
+    <%= f.text_field :name %>
+    <span>商品説明</span>
+    <%= f.text_area :explain %>
+    <span>税抜価格</span>
+    <%= f.text_field :notax_price %>
+    <span>円</span>
+    <%= f.submit "新規登録" %>
+<% end %>

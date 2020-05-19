@@ -1,0 +1,15 @@
+<%= form_for @shipping_address, url:shipping_address_index_path do |f| %>
+    郵便
+    <%= f.number_field :zipcode %>
+    住所
+    <%= f.text_field :address %>
+    宛名
+    <%= f.text_field :name %>
+    <%= f.submit "登録する" %>
+<% end %>
+
+<% @shipping_addresses.each do |shipping_address| %>
+    <%= shipping_address.zipcode %>
+    <%= shipping_address.address %>
+    <%= shipping_address.name %>
+<% end %>
